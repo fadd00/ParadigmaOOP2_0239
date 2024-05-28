@@ -26,4 +26,17 @@ class pelajar : public orang {
     pelajar(int pUmur) : orang(pUmur) {
         cout << "pelajar Dibuat\n" << endl;
     }
+};
+
+class budi : public orang {
+    public:
+    budi(int pUmur) : orang(pUmur) {
+        cout << "budi Dibuat\n" << endl;
+    }
+};
+
+int main(){
+    budi a(12);
+
+    return 0;
 }
