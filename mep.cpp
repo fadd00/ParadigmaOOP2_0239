@@ -6,28 +6,25 @@ class orang {
 public:
     int umur;
 
-    orang(int pUmur) :
-        umur(pUmur)
+    orang(int pUmur) : umur(pUmur)
         {
             cout << "orang dibuat dengan umur " << umur << "\n" << endl;
         }
 };
 
-class pekerja : public orang {
+class pekerja : virtual public orang {
 public:
 
-    pekerja(int pUmur) :
-        orang(pUmur)
+    pekerja(int pUmur) : orang(pUmur)
         {
             cout << "pekerja dibuat\n" << endl;
         }
 };
 
-class pelajar : public orang {
+class pelajar : virtual public orang {
 public:
 
-    pelajar(int pUmur) :
-        orang(pUmur)
+    pelajar(int pUmur) : orang(pUmur)
     {
         cout << "pelajar dibuat\n" << endl;
     }
@@ -38,7 +35,8 @@ public:
 
     budi(int pUmur) :
         pekerja(pUmur),
-        pelajar(pUmur)
+        pelajar(pUmur),
+        orang(pUmur)
     {
         cout << "Budi dibuat\n" << endl;
     }
