@@ -5,9 +5,9 @@ using namespace std;
 class seseorang {
     public:
     virtual void pesan() = 0;
-    virtual void (){
-        cout << "pesan dari seseorang" << endl;
-    }
+    // virtual void (){
+    //     cout << "pesan dari seseorang" << endl;
+    // }
 };
 
 class joko : public seseorang {
