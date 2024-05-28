@@ -9,6 +9,9 @@ class seseorang {
         cout << "pesan dari seseorang" << endl;
     }
 };
-int main(){
 
-};
+class joko : public seseorang {
+    public:
+void pesan(){
+cout << "pesan dari joko" << endl;
+    } 
