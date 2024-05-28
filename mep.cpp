@@ -19,3 +19,11 @@ class pekerja : public orang {
         cout << "pekerja Dibuat\n" << endl;
     }
 };
+
+class pelajar : public orang {
+    public:
+
+    pelajar(int pUmur) : orang(pUmur) {
+        cout << "pelajar Dibuat\n" << endl;
+    }
+}
